@@ -1,0 +1,116 @@
+@import "../../variables";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  z-index: 10;
+  
+  position: sticky;
+  top: 0;
+  
+  background: change-color($background-dark, $alpha: 0.8);
+  backdrop-filter: blur(6px);
+  transition: 512ms;
+
+  &.scrolled {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    .logo {
+      max-width: 110px !important;
+      min-width: 85px !important;
+    }
+  }
+}
+
+.navbar {
+  max-width: 1280px;
+  width: 100%;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+  .logo {
+    max-width: 155px;
+    min-width: 100px;
+    width: 100%;
+    transition: 512ms;
+    
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  .navbar-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navbar-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;    
+      justify-content: space-between;
+      gap: 0;
+
+      @media (min-width: 1030px) {
+        justify-content: center;
+        gap: 3rem;
+      }
+    }
+
+    .navbar-list {
+      display: none;
+      flex-direction: row;
+      gap: 3rem;
+
+      li {
+        font-weight: 400;
+        font-size: 14px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: 255ms;
+          
+          &:hover {
+            color: #ffffff80;
+          }
+        }
+        @media (min-width: 1030px) {
+          font-size: 15px;
+        }
+      }
+
+      @media (min-width: 1030px) {
+        display: flex;
+      }
+    }
+
+    .icon {
+      color: white;
+      background: none;
+      border: none;
+      padding: .3rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+
+      font-size: 1.4rem;
+      @media (min-width: 1030px) {
+        display: block;
+        &.menu {
+          display: none; 
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1030px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

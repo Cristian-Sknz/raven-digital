@@ -1,0 +1,46 @@
+@import '../../variables';
+
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 5rem;
+  padding-bottom: 3.5rem;
+
+  background-color: #2B61F7;
+  width: 100%;
+}
+
+.counters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: map-get($screen, 'xl');
+  width: 100%;
+  gap: 0.5rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+  }
+}

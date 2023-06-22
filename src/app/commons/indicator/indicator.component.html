@@ -1,0 +1,8 @@
+<span>{{ slide < 9 && slide > 0 ? '0' + slide : slide}}</span>
+<div class="bar">
+  <div
+    *ngFor="let item of array(); index as i"
+    [class.active]="i + 1 <= slide"
+  ></div>
+</div>
+<span>{{ slide_size< 9 && slide_size> 0 ? '0' + slide_size : slide_size}}</span>

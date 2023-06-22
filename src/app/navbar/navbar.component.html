@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="navbar-body">
+    <div class="logo">
+      <img src="../../assets/logo.png" alt="Raven Logo"/>
+    </div>
+    <div class="navbar-content">
+      <ul class="navbar-list">
+        <li *ngFor="let item of items">
+          <a href="#{{ item.toLowerCase() }}">{{ item }}</a>
+        </li>
+      </ul>
+      <button class="icon">
+        <fa-icon [icon]="icons['search']" />
+      </button>
+
+      <button class="icon menu">
+        <fa-icon [icon]="icons['menu']" />
+      </button>
+    </div>
+  </div>
+</nav>

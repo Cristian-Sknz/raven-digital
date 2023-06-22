@@ -1,0 +1,55 @@
+@import '../../../styles.scss';
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: .8rem;
+  width: 20rem;
+
+  @media (min-width: map-get($screen, 'md')) {
+    width: 10rem;
+    align-self: auto;
+  }
+
+  &.column {
+    flex-direction: column;
+    align-self: auto;
+    height: 20rem;
+    width: auto;
+    .bar {
+      width: 0.2rem;
+      flex-direction: column;
+      gap: .3rem;
+      div {
+        height: auto;
+        width: 100%;
+        flex: 1;
+      }
+    }
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    height: 0.2rem;
+    gap: 0.08rem;
+
+    div {
+      background-color: white;
+      height: 100%;
+      flex: 1;
+      &.active {
+        background-color: $color-blue;
+      }
+    }
+  }
+  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}

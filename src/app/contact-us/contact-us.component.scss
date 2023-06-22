@@ -1,0 +1,127 @@
+@import '../../variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  max-width: map-get($screen, 'xl');
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1;
+    width: 85%;
+
+    .contact-field, .message-field {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+
+      label {
+        font-size: 1rem;
+      }
+    }
+
+    input, textarea {
+      background: none;
+      padding: .5rem;
+      color: white;
+      border: none;
+      border-bottom: 2px solid #536A82;
+    }
+
+    button {
+      color: white;
+      background-color: $color-blue;
+      padding: .8rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      border-radius: 3rem;
+    }
+
+    @media (min-width: map-get($screen, 'md')) {
+      max-width: 575px;
+      width: auto;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1.5rem;
+    gap: 2rem;
+    
+    .contact, .contact-info, .contact-values {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    
+    .contact-info {
+      flex-direction: column;
+      flex: 1;
+
+      .contact-values {
+        color: #B6B6B6;
+        align-items: center;
+        max-width: 245px;
+        line-height: 1.2;
+
+        button {
+          display: none;
+          color: white;
+          background-color: $color-blue;
+          padding: .4rem;
+          border-radius: 3rem;
+          max-width: 100px;
+          width: 100%;
+          @media (min-width: map-get($screen, 'md')) {
+            display: block;
+          }
+        }
+      }
+    }
+
+    @media (min-width: map-get($screen, 'sm')) {
+      flex-direction: row;
+    }
+
+    @media (min-width: map-get($screen, 'md')) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: normal;
+      gap: 3rem;
+    }
+  }
+
+  @media (min-width: map-get($screen, 'md')) {
+    flex-direction: row;
+    align-items: normal;
+    width: 85%;
+  }
+
+  @media (min-width: map-get($screen, 'lg')) {
+    gap: 6rem;
+  }
+}

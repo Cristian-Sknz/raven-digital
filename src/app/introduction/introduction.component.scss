@@ -1,0 +1,134 @@
+@import "../../variables";
+
+:host {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+
+  width: 100%;
+  max-width: map-get($screen, 'xl');
+  @media (min-width: map-get($screen, 'md')) {
+    flex-direction: row;
+  }
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  flex: 1;
+
+  gap: 2.5rem;
+  padding-left: 3%;
+  padding-right: 3%;
+
+  .title {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+  
+      &.subtitle {
+        font-size: 3.4rem;
+      }
+
+      @media (min-width: map-get($screen, 'xs')) {
+        font-size: 3rem;
+        &.subtitle {
+          font-size: 3rem;
+        }
+      }
+      
+      @media (min-width: map-get($screen, 'sm')) {
+        font-size: 4.6rem;
+        &.subtitle {
+          font-size: 3.65rem;
+        }
+      }
+      
+      @media (min-width: map-get($screen, 'md')) {
+        font-size: 5rem;
+        text-align: left;
+      }
+    }
+  }
+
+
+  p {
+    font-weight: 300;
+    
+    @media (min-width: map-get($screen, 'xs')) {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    @media (min-width: map-get($screen, 'sm')) {
+      font-size: 1.4rem;
+    }
+    
+    @media (min-width: map-get($screen, 'md')) {
+      font-size: 1rem;
+      text-align: left;
+    }
+    
+  }
+
+  button {
+    color: white;
+    padding: 1.3rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    background: $color-blue;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    
+    @media (min-width: map-get($screen, 'md')) {
+      font-size: 1rem;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: map-get($screen, 'md')) {
+    align-items: flex-start;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.introduction-image {
+  flex: 1;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  @media (min-width: map-get($screen, 'xs')) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+
+  @media (min-width: map-get($screen, 'md')) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    img {
+      border-radius: 0rem;
+      border-top-left-radius: 4rem;
+    }
+  }
+}

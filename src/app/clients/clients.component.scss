@@ -1,0 +1,46 @@
+@import '../../variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-lite-dark;
+  width: 100%;
+  gap: 2rem;
+}
+
+.clients {
+  width: 100%;
+  max-width: map-get($screen, 'xl');
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+
+  .clients-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 5%;
+
+    flex-wrap: wrap;
+    li {
+      flex-basis: 100px;
+      flex-grow:0;
+      flex-shrink:0;
+
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

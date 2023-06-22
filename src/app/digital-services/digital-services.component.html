@@ -1,0 +1,26 @@
+<div class="digital-services">
+  <h2 class="title">What we do</h2>
+
+  <ul class="service-list">
+    <li class="card" *ngFor="let item of elements;">
+      <div class="card-content">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.content }}</p>
+    
+        <a [href]="item.link">Contact Us</a>
+      </div>
+
+      <div class="icon">
+        <div>
+          <fa-icon [icon]="icons[item.icon]"/>
+        </div>
+      </div>
+    </li>
+
+    <li class="card-bussiness">
+      <h3>Solutions for your bussiness</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Learn more</button>
+    </li>
+  </ul>
+</div>

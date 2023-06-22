@@ -1,0 +1,36 @@
+[{
+  "title": "App Development", 
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "desktop"
+},
+{
+  "title": "Website Development", 
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "window"
+},
+{
+  "title": "UI/UX Designing", 
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "frame"
+},
+{
+  "title": "Digital Marketing", 
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "gem"
+},
+{
+  "title": "SEO & Content Writing", 
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "chart-column"
+},
+{
+  "title": "Graphic Designing",
+  "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "link": "#none",
+  "icon": "paint-roller"
+}]

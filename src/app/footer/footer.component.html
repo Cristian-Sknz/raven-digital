@@ -1,0 +1,27 @@
+<div class="brand">
+  <div class="logo">
+    <img src="../../assets/logo.png" alt="Raven Logo"/>
+  </div>
+  
+  <p class="footer-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit id fringilla turpis tempor enim. Vel tristique suspendisse
+  </p>
+</div>
+
+<ul class="footer-links">
+  <li class="footer-link" *ngFor="let item of links;">
+    <a href="#">{{ item }}</a>
+  </li>
+</ul>
+
+<div class="social-media">
+  <a href="#" class="social-link">
+    <fa-icon [icon]="icons['facebook']"></fa-icon>
+  </a>
+  <a href="#" class="social-link">
+    <fa-icon [icon]="icons['twitter']"></fa-icon>
+  </a>
+  <a href="#" class="social-link">
+    <fa-icon [icon]="icons['instagram']"></fa-icon>
+  </a>
+</div>

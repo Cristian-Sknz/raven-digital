@@ -1,0 +1,52 @@
+<div class="team-container">
+  <div class="people">
+    <img src="../../assets/7-team.png"/>
+  </div>
+  
+  <div class="team-card">
+    <div class="team-texts">
+      <h2 class="team-heading">Testimonials</h2>
+      <div class="team-people">
+        <h3>Jane Doe</h3>
+        <h4>Company / CEO</h4>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit id fringilla turpis tempor enim. Vel tristique suspendisse eget sodales egestas. Donec duis lacus, odio velit eu eget ac tortor. Ac sit ultricies hendrerit pellentesque arcu fames sit lectus. Scelerisque id bibendum velit cras. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit id fringilla turpis tempor enim. Vel tristique suspendisse eget sodales egestas. </p>
+    </div>
+  
+    <common-indicator class="column"/>
+  </div>  
+</div>
+
+<div class="our-team">
+  <h2>Our Team</h2>
+
+  <ul class="team-list">
+    <li class="card" *ngFor="let item of [8,7,9,10]">
+      <div class="card-inner">
+        <img src="../../assets/{{ item }}-team.png"/>
+        <div class="card-back">
+          <div class="content">
+            <div class="people">
+              <h4>Jane Doe</h4>
+              <h5>CEO / Company</h5>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit id fringilla turpis tempor enim. Vel tristique suspendisse </p>
+
+            <div class="social-media">
+              <a href="#" class="social-link">
+                <fa-icon [icon]="icons['facebook']"></fa-icon>
+              </a>
+              <a href="#" class="social-link">
+                <fa-icon [icon]="icons['twitter']"></fa-icon>
+              </a>
+              <a href="#" class="social-link">
+                <fa-icon [icon]="icons['instagram']"></fa-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,58 @@
+<h2 class="title">Contact Us</h2>
+
+<div class="contact-container">
+  <form class="contact-form">
+    <fieldset class="contact-field" *ngFor="let field of fields;">
+      <label>{{ field }}</label>
+      <input placeholder="{{ field }} here"/>
+    </fieldset>
+
+    <fieldset class="message-field">
+      <label>Message</label>
+      <textarea></textarea>
+    </fieldset>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <aside class="contacts">
+    <div class="contact phone">
+      <fa-icon [icon]="icons['phone']"/>
+      <div class="contact-info">
+        <h4>Mobile number</h4>
+
+        <div class="contact-values">
+          <p>+1 252-937-3762</p>
+          <button>Call</button>
+        </div>
+
+        <div class="contact-values">
+          <p>+1 252-937-3762</p>
+          <button>Call</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact email">
+      <fa-icon [icon]="icons['email']"/>
+      <div class="contact-info">
+        <h4>E-mail</h4>
+
+        <div class="contact-values">
+          <p>sample@example.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact address">
+      <fa-icon [icon]="icons['map']"/>
+      <div class="contact-info">
+        <h4>Address</h4>
+
+        <div class="contact-values">
+          <p>5 Indian Spring Dr.Mundelein, IL 60060</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
